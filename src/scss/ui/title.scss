@@ -1,0 +1,59 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.m-title {
+  font-family: "Haval", sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 96%;
+  letter-spacing: -0.02em;
+
+  @include laptop-middle {
+    font-size: 46px;
+  }
+  @include laptop-min {
+    font-size: 42px;
+  }
+  @include tablet {
+    font-size: 36px;
+  }
+}
+.s-title {
+  font-family: "Haval", sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+
+  @include laptop-middle {
+    font-size: 36px;
+  }
+  @include laptop-min {
+    font-size: 32px;
+  }
+  @include tablet {
+    font-size: 28px;
+  }
+}
+
+.t-title {
+  font-family: "Haval", sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 85%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @include laptop-middle {
+    font-size: 32px;
+  }
+  @include laptop-min {
+    font-size: 28px;
+  }
+  @include tablet {
+    font-size: 24px;
+  }
+}

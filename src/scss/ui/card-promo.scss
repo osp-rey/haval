@@ -1,0 +1,53 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.card-promo {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  &__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/0.61;
+    object-fit: cover;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px 20px 55px 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+    @include laptop-min {
+      padding: 20px;
+    }
+  }
+  &__title {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0px;
+
+    li {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      .name {
+        color: var(--primary);
+      }
+      .val {
+        font-family: "Haval", sans-serif;
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+    margin-top: auto;
+  }
+}

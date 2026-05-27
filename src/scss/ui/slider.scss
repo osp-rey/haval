@@ -1,0 +1,137 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.slider-pagination {
+  @include flex-center;
+  gap: 10px;
+
+  &.swiper-pagination-lock {
+    display: none;
+  }
+  &._white {
+    .swiper-pagination-bullet {
+      --background: rgba(255, 255, 255, 0.2);
+      --border: white;
+      --background-h: white;
+      --border-h: white;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    --background: rgba(97, 106, 112, 0.2);
+    --border: var(--primary);
+    --background-h: var(--black);
+    --border-h: var(--black);
+
+    margin: 0 !important;
+    opacity: 1 !important;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--border);
+    border-radius: 0px;
+    background-color: var(--background);
+
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease;
+
+    @include hover {
+      background-color: var(--background-h);
+      border-color: var(--border-h);
+    }
+
+    &.swiper-pagination-bullet-active {
+      background-color: var(--background-h);
+      border-color: var(--border-h);
+    }
+  }
+}
+
+.slider-arrows {
+  display: flex;
+  width: fit-content;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.slider-arrow {
+  --background: rgba(255, 255, 255, 0.2);
+  --border: rgba(0, 0, 0, 0.2);
+  --color: var(--primary);
+  --background-h: var(--primary);
+  --border-h: var(--primary);
+  --color-h: white;
+
+  @include flex-center;
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--color);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+
+  &._white {
+    --background: rgba(255, 255, 255, 0.2);
+    --border: white;
+    --color: white;
+  }
+  &.swiper-button-disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  &.swiper-button-lock {
+    display: none;
+  }
+
+  @include hover {
+    border: 1px solid var(--border-h);
+    background-color: var(--background-h);
+    color: var(--color-h);
+  }
+
+  svg {
+    width: 14px;
+    height: 24px;
+  }
+}
+
+.slider-scrollbar {
+  --background: rgba(0, 0, 0, 0.2);
+  --color: var(--black);
+
+  margin-top: 60px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--background);
+  color: var(--color);
+
+  @include laptop-min {
+    margin-top: 40px;
+  }
+  @include tablet {
+    margin-top: 25px;
+  }
+
+  &.swiper-scrollbar-lock {
+    display: none;
+  }
+  .swiper-scrollbar-drag {
+    position: relative;
+    background-color: currentColor;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      inset: -1px 0px;
+      background-color: currentColor;
+      z-index: 1;
+    }
+  }
+}

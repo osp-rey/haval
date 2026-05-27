@@ -1,0 +1,81 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-hero {
+  &__slider {
+    position: relative;
+  }
+  &__slide {
+    display: flex !important;
+    padding: 210px 0px;
+    box-sizing: border-box;
+    z-index: 1;
+    height: auto !important;
+    color: white;
+
+    @include laptop {
+      padding: 150px 0px;
+    }
+    @include laptop-min {
+      padding: 80px 0px;
+    }
+    @include tablet-min {
+      padding: 60px 0px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 345px;
+      background: linear-gradient(
+        180deg,
+        rgba(18, 19, 20, 0.4) 0%,
+        rgba(18, 19, 20, 0) 100%
+      );
+      z-index: -1;
+
+      @include laptop {
+        bottom: 0;
+      }
+    }
+  }
+  &__slide-info {
+    max-width: 955px;
+  }
+  &__slide-title {
+  }
+  &__slide-content {
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  &__slide-btn {
+    margin-top: 30px;
+  }
+  &__slider-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    z-index: 10;
+
+    @include tablet {
+      bottom: 20px;
+    }
+
+    .slider-arrows {
+      margin: 0px 90px 50px auto;
+      @include desktop {
+        margin-right: 0;
+      }
+      @include laptop-middle {
+        margin-bottom: 30px;
+      }
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+}

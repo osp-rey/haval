@@ -1,0 +1,50 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-catalog {
+  overflow: hidden;
+  &__nav {
+    margin-top: 30px;
+  }
+  &__nav-title {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+  &__nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 15px;
+    font-family: "Haval", sans-serif;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__select {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__slider {
+    overflow: visible !important;
+
+    .swiper-slide {
+      box-sizing: border-box;
+      width: 425px !important;
+      max-width: 100%;
+      height: auto !important;
+
+      @include laptop-min {
+        width: 380px !important;
+      }
+
+      .card-product {
+        height: 100%;
+      }
+    }
+  }
+}

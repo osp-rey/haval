@@ -1,0 +1,34 @@
+@use "./base/fonts";
+@use "./base/normalize";
+@use "./base/vars";
+@use "./base/templates";
+@use "./base/settings";
+@use "./base/media";
+@use "./base/body-config";
+@use "./base/config-container";
+
+// ui
+@use "./ui/button";
+@use "./ui/list";
+@use "./ui/tab";
+@use "./ui/title";
+@use "./ui/content-box";
+@use "./ui/slider";
+@use "./ui/sect";
+@use "./ui/form";
+@use "./ui/select";
+@use "./ui/card-product";
+@use "./ui/card-promo";
+
+// components
+@use "./components/header";
+
+@use "./components/modal";
+@use "./components/burger";
+@use "./components/s-hero";
+@use "./components/s-catalog";
+@use "./components/s-promo";
+@use "./components/s-tradein";
+@use "./components/s-guarantee";
+
+@use "./components/footer";

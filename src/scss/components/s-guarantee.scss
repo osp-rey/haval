@@ -1,0 +1,167 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-guarantee {
+  &__head {
+    .sect-head__wrap {
+      align-items: start;
+      @include laptop-min {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &__title {
+    flex: 0 0 470px;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__head-content {
+    text-align: right;
+    color: var(--primary);
+    max-width: 790px;
+    @include laptop-min {
+      max-width: none;
+      text-align: start;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    @include desktop {
+      gap: 30px;
+    }
+    @include laptop-middle {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__info {
+    flex: 1;
+    @include laptop-middle {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 15px;
+    margin-bottom: 50px;
+    @include laptop-middle {
+      margin-bottom: 30px;
+    }
+  }
+  &__spollers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  &__spoller {
+    width: 100%;
+    border-bottom: 1px solid var(--black);
+  }
+  &__spoller-btn {
+    @include flex-between;
+    cursor: pointer;
+    padding: 12px 0px;
+    gap: 20px;
+
+    user-select: none;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    @include laptop-middle {
+      font-size: 20px;
+    }
+    @include laptop-min {
+      align-items: start;
+      font-size: 18px;
+      padding: 10px 0px;
+    }
+
+    &._spoller-active {
+      .rect::before {
+        transform: rotate(0deg);
+      }
+    }
+
+    .rect {
+      @include flex-center;
+      position: relative;
+      width: 35px;
+      height: 35px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        background-color: currentColor;
+        content: "";
+        width: 22px;
+        height: 2px;
+
+        transition: transform 0.3s ease;
+      }
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__spoller-body {
+    color: var(--primary);
+    padding-bottom: 20px;
+  }
+  &__gallery {
+    position: sticky;
+    top: 80px;
+    width: 570px;
+    flex-shrink: 0;
+    
+    @include desktop {
+      width: 480px;
+    }
+    @include laptop-middle {
+      position: static;
+      width: 715px;
+      max-width: 100%;
+    }
+    .inside {
+      position: relative;
+      width: 100%;
+      height: 585px;
+
+      @media (max-width: 1650px) {
+        height: 475px;
+      }
+      @include laptop-middle {
+        height: auto;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    max-width: none;
+    top: 0;
+    width: auto;
+    left: 0;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: top 0 left 0;
+    width: calc(100% + ((100vw - var(--container-width)) / 2));
+
+    @media (max-width: 1650px) {
+      width: calc(100% + 10px);
+    }
+    @include laptop-middle {
+      position: static;
+      width: 100%;
+    }
+  }
+}

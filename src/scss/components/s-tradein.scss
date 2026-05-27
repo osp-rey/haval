@@ -1,0 +1,66 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-tradein {
+  @include laptop-middle {
+    padding-bottom: 70px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include laptop-middle {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__img {
+    display: block;
+    width: 790px;
+    flex-shrink: 0;
+
+    @include desktop {
+      width: 650px;
+    }
+    @include laptop {
+      width: 600px;
+    }
+  }
+  &__info {
+    max-width: 815px;
+    @include laptop-middle {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  &__title {
+    @include laptop-middle {
+      max-width: 950px;
+    }
+  }
+  &__text {
+    font-size: 30px;
+    line-height: 80%;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    margin-top: 30px;
+    @include laptop-min {
+      font-size: 26px;
+      margin-top: 20px;
+    }
+    @include tablet-min {
+      font-size: 24px;
+    }
+  }
+  &__btn {
+    margin-top: 50px;
+    width: 300px;
+    max-width: 100%;
+    @include laptop-min {
+      margin-top: 30px;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+}

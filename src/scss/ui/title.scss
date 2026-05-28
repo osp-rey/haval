@@ -57,3 +57,21 @@
     font-size: 24px;
   }
 }
+
+.f-title {
+  font-family: "Haval", sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  @include laptop-middle {
+    font-size: 28px;
+  }
+  @include laptop-min {
+    font-size: 24px;
+  }
+  @include tablet {
+    font-size: 22px;
+  }
+}

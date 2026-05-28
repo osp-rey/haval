@@ -83,8 +83,50 @@ export default function sliders() {
       },
       navigation: {
         prevEl: ".s-promo .slider-arrow._prev",
-        nextEl: ".s-promo .slider-arrow._next"
-      }
+        nextEl: ".s-promo .slider-arrow._next",
+      },
+    });
+  }
+
+  const aboutSlider = document.querySelector(".s-about__slider");
+
+  if (aboutSlider) {
+    const thumbAboutSldier = document.querySelector(".s-about__thumb-slider");
+
+    const thumbSwiper = new Swiper(thumbAboutSldier, {
+      speed: 900,
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+      },
+    });
+
+    const swiper = new Swiper(aboutSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: 1,
+      // autoplay: {
+      //   delay: 65000
+      // },
+      thumbs: {
+        swiper: thumbSwiper,
+      },
+      scrollbar: {
+        el: ".s-about .slider-scrollbar",
+        draggable: true
+      },
+      navigation: {
+        prevEl: aboutSlider.querySelector(".slider-arrow._prev"),
+        nextEl: aboutSlider.querySelector(".slider-arrow._next"),
+      },
     });
   }
 }

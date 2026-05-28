@@ -1,0 +1,54 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-offer {
+  position: relative;
+  color: white;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: var(--black);
+    opacity: 0.75;
+    z-index: -1;
+  }
+  &__info {
+    max-width: 705px;
+  }
+  &__content {
+    margin-top: 30px;
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+  &__form {
+    .wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      @include tablet-min {
+        gap: 15px;
+      }
+    }
+    .input-control {
+      @include tablet-min {
+        grid-column: 2 span;
+      }
+    }
+    .btn-s[type="submit"] {
+      --border-h: white;
+      --color-h: white;
+
+      grid-column: 2 span;
+      width: 100%;
+      margin-top: 20px;
+      @include tablet-min {
+        margin-top: 0;
+      }
+    }
+    .check-wrapper {
+      grid-column: 2 span;
+    }
+  }
+}

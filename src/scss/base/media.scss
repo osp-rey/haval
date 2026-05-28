@@ -14,7 +14,7 @@
   }
 }
 @mixin laptop-middle {
-  @media (max-width: 1399px) {
+  @media (max-width: 1199px) {
     @content;
   }
 }

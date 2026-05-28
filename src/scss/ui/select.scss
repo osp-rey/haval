@@ -23,6 +23,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: var(--black);
+  user-select: none;
 
   .input {
     pointer-events: none;
@@ -72,6 +74,10 @@
 
   &::-webkit-scrollbar-thumb {
     background-color: var(--primary);
+  }
+
+  @include tablet {
+    max-height: 210px;
   }
 }
 .select-item {

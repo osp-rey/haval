@@ -11,13 +11,37 @@ export default function handlerSelect() {
 
     selects.forEach((select) => {
       select.addEventListener("click", (e) => e.stopPropagation());
+      const targetOptions = select.dataset.targetOptions;
+      if (targetOptions) {
+        const selector = `data-${targetOptions}-options`;
+        const target = document.querySelector(`[${selector}]`);
+
+        if (target) {
+          const selectBody = select.querySelector(".select-body");
+          const options = target.getAttribute(selector);
+          const arrOptions = options.split(",");
+
+          arrOptions.forEach((option) => {
+            const item = document.createElement("div");
+            item.classList.add("select-item");
+            item.textContent = option;
+
+            selectBody.appendChild(item);
+          });
+        }
+      }
 
       const items = select.querySelectorAll(".select-item");
       const btn = select.querySelector(".select-btn");
       const input = select.querySelector(".select-input");
 
       btn.addEventListener("click", () => {
-        select.classList.toggle("_open");
+        if (select.classList.contains("_open")) {
+          select.classList.remove("_open");
+        } else {
+          selects.forEach((s) => s.classList.remove("_open"));
+          select.classList.add("_open");
+        }
       });
 
       items.forEach((item) => {

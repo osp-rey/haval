@@ -4,6 +4,7 @@ import buttonsNote from "./files/buttonsNote.js";
 import changeModaltitle from "./files/changeModalTitle.js";
 import handlerSelect from "./files/handleSelect.js";
 import inputmask from "./files/inputmask.js";
+import map from "./files/maps.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
 import tab from "./files/tab.js";
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonsNote();
   changeModaltitle();
   spoller();
+  map();
 
   Fancybox.bind("[data-fancybox]", {
     on: {

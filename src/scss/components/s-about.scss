@@ -1,0 +1,167 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-about {
+  @include tablet-min {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 45px;
+    @include laptop-min {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__info {
+    flex: 0 1 875px;
+    @include laptop-min {
+      flex: auto;
+    }
+  }
+  &__content {
+    color: var(--primary);
+  }
+  &__adv-block {
+    margin-top: 25px;
+  }
+  &__adv-title {
+    font-family: "TTWellingtons", sans-serif;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  &__adv-list {
+    display: grid;
+    gap: 20px;
+    row-gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 840px;
+
+    color: var(--primary);
+
+    @include laptop-middle {
+      grid-template-columns: 1fr;
+    }
+
+    li {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        width: 8px;
+        height: 8px;
+        background-color: var(--black);
+        flex-shrink: 0;
+        margin-top: 7px;
+      }
+    }
+  }
+  &__gallery {
+    position: sticky;
+    width: 700px;
+    flex-shrink: 0;
+    top: 90px;
+    @include laptop {
+      width: 550px;
+    }
+    @include laptop-middle {
+      width: 480px;
+    }
+    @include laptop-min {
+      position: static;
+      width: 700px;
+      max-width: 100%;
+    }
+
+    .slider-scrollbar {
+      margin-top: 40px;
+      @include laptop-min {
+        margin-top: 30px;
+      }
+      @include tablet {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__slider {
+    .swiper-slide {
+      aspect-ratio: 1/0.56;
+      overflow: hidden;
+
+      @include hover {
+        img {
+          transform: scale(1.08);
+        }
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s linear;
+      }
+    }
+
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+
+      &._prev {
+        left: 15px;
+      }
+      &._next {
+        right: 15px;
+      }
+
+      @include tablet-min {
+        display: none;
+      }
+    }
+  }
+  &__thumb-slider {
+    margin-top: 20px;
+
+    @include tablet-min {
+      overflow: visible !important;
+    }
+
+    .swiper-slide {
+      cursor: pointer;
+      aspect-ratio: 1/0.87;
+
+      @include tablet-min {
+        width: 140px !important;
+      }
+
+      &.swiper-slide-thumb-active {
+        &::before {
+          opacity: 1;
+        }
+      }
+      @include hover {
+        &::before {
+          opacity: 0.5;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        border: 2px solid var(--black);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import changeModaltitle from "./files/changeModalTitle.js";
 import handlerSelect from "./files/handleSelect.js";
 import inputmask from "./files/inputmask.js";
 import map from "./files/maps.js";
+import productChangeGallery from "./files/productChangeGallery.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
 import tab from "./files/tab.js";
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   changeModaltitle();
   spoller();
   map();
+  productChangeGallery();
 
   Fancybox.bind("[data-fancybox]", {
     on: {

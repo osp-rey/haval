@@ -99,11 +99,14 @@ export function slideDown(target, duration = 500, showmore = 0) {
   }
 }
 
-export function createEl(tag, classes) {
+export function createEl(tag, classes = "") {
   const item = document.createElement(tag);
-  classes.split(" ").forEach((c) => {
-    item.classList.add(c);
-  });
+
+  if (classes) {
+    classes.split(" ").forEach((c) => {
+      item.classList.add(c);
+    });
+  }
 
   return item;
 }

@@ -1,0 +1,238 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-product {
+  @include laptop-min {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include laptop-min {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  &__tab {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &._active {
+      display: block;
+    }
+    &._show {
+      opacity: 1;
+    }
+  }
+  &__info {
+    width: 775px;
+    @include laptop {
+      width: 600px;
+    }
+    @include laptop-middle {
+      width: 500px;
+    }
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__gallery {
+    position: relative;
+    overflow: hidden;
+    display: none;
+    width: 100%;
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    .slider-pagination {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 30px;
+      z-index: 10;
+
+      @include laptop-min {
+        bottom: 20px;
+      }
+      .swiper-pagination-bullet {
+        --background-h: white;
+      }
+    }
+    .slider-arrows {
+      position: absolute;
+      right: 15px;
+      bottom: 30px;
+      z-index: 10;
+
+      .slider-arrow {
+        --background: rgba(18, 19, 20, 0.2);
+      }
+
+      @include laptop-min {
+        display: none;
+      }
+    }
+
+    &._active {
+      display: block;
+    }
+    &._show {
+      opacity: 1;
+    }
+  }
+  &__slider {
+    width: 100%;
+    max-width: 100%;
+
+    .swiper-slide {
+      display: block;
+      aspect-ratio: 1/0.7;
+
+      @include hover {
+        img {
+          transform: scale(1.08);
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s linear;
+      }
+    }
+  }
+  &__main {
+    flex: 0 1 755px;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__content-box {
+    margin-top: 20px;
+    color: var(--primary);
+  }
+  &__main-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+
+    a.block {
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+      @include hover {
+        background-color: var(--ghost);
+      }
+    }
+    .block {
+      display: flex;
+      gap: 40px;
+      padding: 40px;
+      flex: 1;
+      border: 1px solid var(--black);
+      &._price {
+        background-color: var(--ghost);
+        flex: 0 1 495px;
+      }
+
+      @include laptop-middle {
+        padding: 25px;
+        gap: 30px;
+      }
+    }
+    .item {
+    }
+    .name {
+      @include flex-between;
+      gap: 15px;
+      font-size: 18px;
+      line-height: 130%;
+      white-space: nowrap;
+
+      @include laptop-middle {
+        font-size: 16px;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+      }
+    }
+    .val {
+      font-size: 26px;
+      line-height: 130%;
+      text-transform: uppercase;
+      margin-top: 10px;
+
+      @include laptop-middle {
+        font-size: 22px;
+      }
+    }
+    .descr {
+      font-size: 12px;
+      line-height: 130%;
+      color: var(--primary);
+      margin-top: 10px;
+    }
+  }
+  &__colors {
+    margin-top: 30px;
+  }
+  &__colors-title {
+    margin-bottom: 20px;
+
+    span {
+      color: var(--primary);
+      padding-left: 5px;
+    }
+  }
+  &__colors-slider {
+    @include laptop-min {
+      overflow: visible !important;
+    }
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+
+      @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include laptop-min {
+        display: flex;
+        gap: 0px;
+      }
+    }
+  }
+  &__color {
+    cursor: pointer;
+    aspect-ratio: 1/0.6;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+
+    transition: border-color 0.3s ease;
+
+    @include laptop-min {
+      width: 170px !important;
+    }
+    @include hover {
+      border-color: rgba(0, 0, 0, 0.5);
+    }
+    &._active {
+      border-color: var(--black);
+    }
+  }
+}

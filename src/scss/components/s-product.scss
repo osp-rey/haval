@@ -4,6 +4,10 @@
 .s-product {
   @include laptop-min {
     overflow: hidden;
+    margin-top: 50px;
+  }
+  @include tablet {
+    margin-top: 30px;
   }
   &__wrapper {
     display: flex;
@@ -113,6 +117,10 @@
   }
   &__main {
     flex: 0 1 755px;
+    @media (min-width: 992px) {
+      position: sticky;
+      top: 100px;
+    }
     @include laptop-min {
       flex: auto;
       width: 100%;
@@ -153,6 +161,7 @@
       }
     }
     .item {
+      flex: 1
     }
     .name {
       @include flex-between;
@@ -233,6 +242,195 @@
     }
     &._active {
       border-color: var(--black);
+    }
+  }
+  &__complectation {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  &__complectation-title {
+    line-height: 130%;
+    margin-bottom: 20px;
+  }
+  &__complectation-slider {
+    @media (min-width: 992px) {
+      .swiper-wrapper {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+    @include laptop-min {
+      overflow: visible !important;
+    }
+  }
+  &__complectation-btn {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    flex: 1 1 calc(25% - 10px);
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    max-width: 100%;
+
+    white-space: nowrap;
+    font-size: 15px;
+    text-align: center;
+
+    transition: border-color 0.3s ease;
+
+    @include laptop-min {
+      width: fit-content !important;
+      flex: none;
+    }
+    @include hover {
+      border-color: var(--black);
+    }
+    &._active {
+      border-color: var(--black);
+      pointer-events: none;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    @include laptop {
+      margin-top: 30px;
+      gap: 20px;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+
+    .btn-s {
+      flex: 1 1 calc(50% - 30px);
+      white-space: nowrap;
+      @include tablet-min {
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__tel {
+    margin-top: 25px;
+    a {
+      // font-family: "Haval", sans-serif;
+      padding-left: 5px;
+      color: var(--primary);
+      font-size: 24px;
+
+      transition: color 0.3s ease;
+
+      @include tablet-min {
+        font-size: 20px;
+      }
+      @include hover {
+        color: var(--black);
+      }
+    }
+  }
+  &__spollers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 95px;
+    @include desktop {
+      margin-top: 60px;
+    }
+    @include laptop {
+      margin-top: 40px;
+    }
+    @include laptop-min {
+      margin-top: 30px;
+      gap: 20px;
+    }
+    @include tablet {
+      margin-top: 25px;
+    }
+  }
+  &__spoller {
+    border-bottom: 1px solid var(--black);
+  }
+  &__spoller-btn {
+    @include flex-between;
+    padding: 12px 0px;
+    cursor: pointer;
+    gap: 20px;
+
+    font-size: 24px;
+    letter-spacing: 0.01em;
+
+    @include laptop {
+      font-size: 20px;
+    }
+    @include laptop-min {
+      font-size: 18px;
+    }
+    @include tablet-min {
+      font-size: 16px;
+    }
+
+    &._spoller-active {
+      .rect {
+        &::after {
+          transform: rotate(0deg)
+        }
+      }
+    }
+
+    .rect {
+      @include flex-center;
+      position: relative;
+      width: 35px;
+      height: 35px;
+      flex-shrink: 0;
+
+      &::before, &::after {
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: currentColor;
+        transition: transform .3s ease;
+      }
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__spoller-body {
+    padding: 20px 0px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .content-box {
+      ul {
+        color: var(--primary);
+      }
+    }
+  }
+  &__spoller-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+      @include flex-between;
+      gap: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      @include tablet-min {
+        font-size: 15px;
+      }
+
+      .name {
+        color: var(--primary);
+      }
+      .val {
+        max-width: 280px;
+      }
     }
   }
 }

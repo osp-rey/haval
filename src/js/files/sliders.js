@@ -114,14 +114,14 @@ export default function sliders() {
       spaceBetween: 15,
       slidesPerView: 1,
       autoplay: {
-        delay: 65000
+        delay: 65000,
       },
       thumbs: {
         swiper: thumbSwiper,
       },
       scrollbar: {
         el: ".s-about .slider-scrollbar",
-        draggable: true
+        draggable: true,
       },
       navigation: {
         prevEl: aboutSlider.querySelector(".slider-arrow._prev"),
@@ -133,32 +133,61 @@ export default function sliders() {
   const productSliders = document.querySelectorAll(".s-product__slider");
 
   if (productSliders.length) {
-    productSliders.forEach(slider => {
+    productSliders.forEach((slider) => {
       const swiper = new Swiper(slider, {
         speed: 900,
         spaceBetween: 15,
         autoplay: {
-          delay: 6000
+          delay: 6000,
         },
         pagination: {
-          el: slider.closest(".s-product__gallery").querySelector(".slider-pagination"),
-          clickable: true
+          el: slider
+            .closest(".s-product__gallery")
+            .querySelector(".slider-pagination"),
+          clickable: true,
         },
         navigation: {
-          prevEl: slider.closest(".s-product__gallery").querySelector(".slider-arrow._prev"),
-          nextEl: slider.closest(".s-product__gallery").querySelector(".slider-arrow._next")
-        }
-      })
-    })
+          prevEl: slider
+            .closest(".s-product__gallery")
+            .querySelector(".slider-arrow._prev"),
+          nextEl: slider
+            .closest(".s-product__gallery")
+            .querySelector(".slider-arrow._next"),
+        },
+      });
+    });
   }
 
-  const colorsProductSlider = document.querySelector(".s-product__colors-slider");
+  const colorsProductSliders = document.querySelectorAll(
+    ".s-product__colors-slider",
+  );
 
-  if (colorsProductSlider && window.matchMedia("(max-width: 991px)").matches) {
-    const swiper = new Swiper(colorsProductSlider, {
-      speed: 900,
-      spaceBetween: 10,
-      slidesPerView: "auto"
-    })
+  if (
+    colorsProductSliders.length &&
+    window.matchMedia("(max-width: 991px)").matches
+  ) {
+    colorsProductSliders.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 900,
+        spaceBetween: 10,
+        slidesPerView: "auto",
+      });
+    });
+  }
+  const complectationProductSliders = document.querySelectorAll(
+    ".s-product__complectation-slider",
+  );
+
+  if (
+    complectationProductSliders.length &&
+    window.matchMedia("(max-width: 991px)").matches
+  ) {
+    complectationProductSliders.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 900,
+        spaceBetween: 10,
+        slidesPerView: "auto",
+      });
+    });
   }
 }

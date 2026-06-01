@@ -23,10 +23,10 @@ export default function sliders() {
         document.querySelector(".header").clientHeight + headerNavHeight;
       slides.forEach(
         (slide) =>
-          (slide.style.minHeight = `${window.visualViewport.height - headerHeight}px`),
+          (slide.style.minHeight = `${window.innerHeight - headerHeight}px`),
       );
     }
-    window.visualViewport.addEventListener("resize", updateHeightSlider);
+    // window.addEventListener("resize", updateHeightSlider);
     updateHeightSlider();
 
     const swiper = new Swiper(heroSlider, {

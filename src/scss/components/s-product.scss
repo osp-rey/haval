@@ -242,6 +242,7 @@
     }
     &._active {
       border-color: var(--black);
+      pointer-events: none;
     }
   }
   &__complectation {

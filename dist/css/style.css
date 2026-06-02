@@ -1688,7 +1688,8 @@ img {
   transition: border-color .3s ease
 }
 .s-product__color._active {
-  border-color: var(--black)
+  border-color: var(--black);
+  pointer-events: none
 }
 .s-product__complectation {
   flex-wrap: wrap;

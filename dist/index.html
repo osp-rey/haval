@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HAVAL</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20260602141654">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20260602141654">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260602141654">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<div class="header__end">
+					<div class="header__address">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Альметьевск, ул. Герцена, д. 1Б</span>
+					</div>
+					<a href="tel:+78553420697" class="header__tel">+7 (8553) 42-06-97</a>
+					<a href="+78553420697" class="header__mob-tel">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#icon-tel'></use>
+						</svg>
+					</a>
+					<div class="header__burger" id="burger-open">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="header-nav">
+		<div class="container">
+			<div class="swiper header-nav__slider">
+				<div class="swiper-wrapper">
+					<a href="/#s-catalog" class="swiper-slide">Модельный ряд</a>
+					<a href="/#s-credit" class="swiper-slide">Программы кредитования</a>
+					<a href="/#s-promo" class="swiper-slide">Специальные предложения</a>
+					<a href="/#s-calc" class="swiper-slide">Оформить кредит</a>
+					<a href="/#s-contacts" class="swiper-slide">Как нас найти</a>
+					<a href="/#s-offer" class="swiper-slide">Тест-драйв</a>
+				</div>
+			</div>
+			<ul class="list header-nav__list">
+			</ul>
+		</div>
+	</nav>
+	<aside class="burger-overlay" id="burger-overlay"></aside>
+	<aside class="burger" id="burger">
+		<div class="burger__header">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<a href="/#s-catalog">Модельный ряд</a>
+			<a href="/#s-credit">Программы кредитования</a>
+			<a href="/#s-promo">Специальные предложения</a>
+			<a href="/#s-calc">Оформить кредит</a>
+			<a href="/#s-contacts">Как нас найти</a>
+			<a href="/#s-offer">Тест-драйв</a>
+		</ul>
+		<div class="burger__bottom">
+			<div class="burger__address">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<span>Альметьевск, ул. Герцена, д. 1Б</span>
+			</div>
+			<a href="tel:+78553420697" class="burger__tel">+7 (8553) 42-06-97</a>
+		</div>
+	</aside>
+
+	<aside>
+		<div class="modal" id="modal-callback">
+			<div data-fancybox-close class="modal__close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+			<div class="modal__body">
+				<div class="t-title modal__title" data-text="Связаться с нами">
+					Связаться с нами
+				</div>
+				<div class="modal__form">
+					<div style="display: none">
+						<input type="text" class="input-note" />
+					</div>
+					<div class="input-control">
+						<input type="text" placeholder="Ваше имя" class="input" />
+					</div>
+					<div class="input-control">
+						<input type="tel" placeholder="Телефон" class="input" />
+					</div>
+					<button type="submit" class="btn-s">Оставить заявку</button>
+					<div class="check-wrapper">
+						<span class="wpcf7-form-control-wrap">
+							<span class="wpcf7-form-control wpcf7-acceptance">
+								<span class="wpcf7-list-item">
+									<label>
+										<input type="checkbox" name="acceptance-469" />
+										<span class="wpcf7-list-item-label">
+											<span>
+												Я даю согласие на
+												<a href="/privacy-policy" target="_blank">
+													Обработку персональных данных
+												</a>
+											</span>
+										</span>
+									</label>
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-b" id="modal-credit" style="
+      background: url(&quot;img//modal-b.jpg&quot;) center / cover no-repeat;
+    ">
+			<div data-fancybox-close class="modal-b__close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+			<div class="modal-b__body">
+				<div class="modal-b__info">
+					<div class="s-title modal-b__title">Рассчитать HAVAL в кредит</div>
+					<p class="modal-b__content">
+						Полная стоимость кредита (займа) в % годовых от 0,01% ДО 15,808%
+						оценивайте свои финансовые возможности и риски кредит от 0,01%
+					</p>
+					<div data-model-options="H3,H5,H7,H9,H3,H5,H7,H9,">
+						<form action="#" class="modal-b__form">
+							<div class="wrap">
+								<div class="input-control">
+									<div class="select" data-target-options="model">
+										<div class="select-btn">
+											<input type="text" placeholder="Модель" readonly class="input select-input" />
+											<svg class="arrow">
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body"></div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Фамилия" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Имя" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Первоначальный взнос" class="input" />
+								</div>
+								<div class="input-control">
+									<div class="select">
+										<div class="select-btn">
+											<input type="text" placeholder="Срок кредита" readonly class="input select-input" />
+											<svg class="arrow">
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body">
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+										</div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="Телефон" class="input" />
+								</div>
+								<button type="submit" class="btn-s _primary">
+									Оставить заявку
+								</button>
+								<div class="check-wrapper _white">
+									<span class="wpcf7-form-control-wrap">
+										<span class="wpcf7-form-control wpcf7-acceptance">
+											<span class="wpcf7-list-item">
+												<label>
+													<input type="checkbox" name="acceptance-469" />
+													<span class="wpcf7-list-item-label">
+														<span>
+															Я даю согласие на
+															<a href="/privacy-policy" target="_blank">
+																Обработку персональных данных
+															</a>
+														</span>
+													</span>
+												</label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main>
+
+		<section class="s-hero" id="s-hero">
+			<div class="swiper s-hero__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide s-hero__slide" style="
+          background: url(&quot;img/hero.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="s-hero__slide-info">
+								<h1 class="m-title s-hero__slide-title">
+									Официальный дилер HAVAL в Альметьевске
+								</h1>
+								<div class="content-box s-hero__slide-content">
+									<p>
+										Покупая haval у официального дилера, вы получаете гарантию от
+										производителя, качественное сервисное обслуживание и доступ к
+										оригинальным запчастям. Доверьтесь профессионалам!
+									</p>
+								</div>
+								<a href="#" class="btn-s s-hero__slide-btn _white">
+									<span>ПОСМОТРЕТЬ МОДЕЛЬНЫЙ РЯД</span>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide s-hero__slide" style="
+          background: url(&quot;img/hero.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="s-hero__slide-info">
+								<h2 class="m-title s-hero__slide-title">
+									Официальный дилер HAVAL в Альметьевске 2
+								</h2>
+								<div class="content-box s-hero__slide-content">
+									<p>
+										Покупая haval у официального дилера, вы получаете гарантию от
+										производителя, качественное сервисное обслуживание и доступ
+									</p>
+								</div>
+								<a href="#" class="btn-s s-hero__slide-btn _white">
+									<span>ПОСМОТРЕТЬ МОДЕЛЬНЫЙ РЯД</span>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide s-hero__slide" style="
+          background: url(&quot;img/hero.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="s-hero__slide-info">
+								<h2 class="m-title s-hero__slide-title">
+									Официальный дилер HAVAL в Альметьевске 2
+								</h2>
+								<div class="content-box s-hero__slide-content">
+									<p>
+										Покупая haval у официального дилера, вы получаете гарантию от
+										производителя, качественное сервисное обслуживание и доступ
+									</p>
+									<p>
+										Покупая haval у официального дилера, вы получаете гарантию от
+										производителя, качественное сервисное обслуживание и доступ
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide s-hero__slide" style="
+          background: url(&quot;img/hero.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="s-hero__slide-info">
+								<h2 class="m-title s-hero__slide-title">
+									Официальный дилер HAVAL в Альметьевске 2
+								</h2>
+								<div class="content-box s-hero__slide-content">
+									<p>
+										Покупая haval у официального дилера, вы получаете гарантию от
+										производителя, качественное сервисное обслуживание и доступ
+									</p>
+								</div>
+								<a href="#" class="btn-s s-hero__slide-btn _white">
+									<span>ПОСМОТРЕТЬ МОДЕЛЬНЫЙ РЯД</span>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-hero__slider-nav">
+					<div class="container">
+						<div class="slider-arrows">
+							<div class="slider-arrow _prev _white">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-prev'></use>
+								</svg>
+							</div>
+							<div class="slider-arrow _next _white">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-next'></use>
+								</svg>
+							</div>
+						</div>
+						<div class="slider-pagination _white"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-catalog sect-m" id="s-catalog">
+			<div class="container tabs">
+				<div class="sect-head">
+					<h2 class="s-title">Модельный ряд HAVAL</h2>
+					<div class="tabs-nav s-catalog__nav">
+						<div class="s-catalog__nav-title">Выберите модель HAVAL</div>
+						<div class="s-catalog__nav-wrapper">
+							<div data-tab-btn="tab-catalog-0" class="btn-s _active">
+								Все модели
+							</div>
+							<div data-tab-btn="tab-catalog-1" class="btn-s">H3</div>
+							<div data-tab-btn="tab-catalog-2" class="btn-s">H5</div>
+							<div data-tab-btn="tab-catalog-3" class="btn-s">H7</div>
+							<div data-tab-btn="tab-catalog-4" class="btn-s">H9</div>
+						</div>
+						<div class="select s-catalog__select">
+							<div class="select-btn">
+								<input type="text" placeholder="Выберите модель HAVAL" readonly value="Все модели" class="input select-input" />
+								<svg class="arrow">
+									<use xlink:href="img/icons/icons.svg#icon-down"></use>
+								</svg>
+							</div>
+							<div class="select-body">
+								<div data-tab-btn="tab-catalog-0" class="select-item _active">
+									Все модели
+								</div>
+								<div data-tab-btn="tab-catalog-1" class="select-item">H3</div>
+								<div data-tab-btn="tab-catalog-2" class="select-item">H5</div>
+								<div data-tab-btn="tab-catalog-3" class="select-item">H7</div>
+								<div data-tab-btn="tab-catalog-4" class="select-item">H9</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabs-content">
+					<div data-tab="tab-catalog-0" class="_active _show">
+						<div class="swiper s-catalog__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H3</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-btn-note="Тест драйв: haval H3" data-target-note="#modal-callback .input-note" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H7</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H9</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H3</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H7</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H9</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+					<div data-tab="tab-catalog-1">
+						<div class="swiper s-catalog__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H3</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H3</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+					<div data-tab="tab-catalog-2">
+						<div class="swiper s-catalog__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+					<div data-tab="tab-catalog-3">
+						<div class="swiper s-catalog__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+					<div data-tab="tab-catalog-4">
+						<div class="swiper s-catalog__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card-product">
+										<a href="#" class="card-product__gallery">
+											<img src="img/card-product.png" alt="image" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="t-title card-product__title">haval H5</a>
+											<p class="card-product__content">
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+												Обновленный HAVAL H3 стал еще выразительнее и продуманнее.
+											</p>
+											<div class="card-product__price">
+												<div class="item">
+													<div class="name">Цена от</div>
+													<div class="val">2 499 000 ₽</div>
+												</div>
+												<div class="item">
+													<div class="name">В кредит от</div>
+													<div class="val">0,01%</div>
+												</div>
+											</div>
+											<div class="card-product__buttons">
+												<a href="#" class="btn-s">
+													<span>подробнее</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+												<a href="#modal-callback" data-fancybox data-modal-title="Записаться на тест-драйв" class="btn-s">
+													<span>тест-драйв</span>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-p s-promo bg-ghost" id="s-promo">
+			<div class="container">
+				<div class="sect-head">
+					<div class="sect-head__wrap">
+						<h2 class="s-title">Акции и специальные предложения</h2>
+						<div class="slider-arrows">
+							<div class="slider-arrow _prev">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+								</svg>
+							</div>
+							<div class="slider-arrow _next">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-next"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper s-promo__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+										<li>
+											<span class="name">Выгода по трейд-ин</span>
+											<span class="val">200 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+										<li>
+											<span class="name">Выгода по трейд-ин</span>
+											<span class="val">200 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+										<li>
+											<span class="name">Выгода по трейд-ин</span>
+											<span class="val">200 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="card-promo">
+								<img src="img/card-promo.jpg" alt="image" class="card-promo__img" />
+								<div class="card-promo__body">
+									<h3 class="t-title card-promo__title">HAVAL H5</h3>
+									<ul class="list card-promo__list">
+										<li>
+											<span class="name">Прямая выгода</span>
+											<span class="val">100 000 ₽</span>
+										</li>
+										<li>
+											<span class="name">Выгода по трейд-ин</span>
+											<span class="val">200 000 ₽</span>
+										</li>
+									</ul>
+									<a href="#modal-callback" data-fancybox data-btn-note="Акция: HAVAL H5" data-target-note="#modal-callback .input-note" class="btn-s card-promo__btn">
+										ПОЛУЧИТЬ ВЫГОДУ
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="slider-scrollbar"></div>
+			</div>
+		</section>
+
+		<section class="s-tradein bg-ghost">
+			<div class="container">
+				<div class="s-tradein__wrapper">
+					<img src="img/tradein.png" alt="image" class="s-tradein__img" />
+					<div class="s-tradein__info">
+						<h2 class="s-title s-tradein__title">
+							Выгодный обмен TRADE-IN сдай свой старый автомобиль
+						</h2>
+						<div class="s-tradein__text">
+							И получи скидку до 300 000 рублей на новый
+						</div>
+						<a href="#modal-callback" data-fancybox data-btn-note="Заявка на TRADE-IN" data-target-note="#modal-callback .input-note" class="btn-s s-tradein__btn _primary">
+							Оставить заявку
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-guarantee" id="s-guarantee">
+			<div class="container">
+				<div class="sect-head s-guarantee__head">
+					<div class="sect-head__wrap">
+						<h2 class="s-title s-guarantee__title">
+							Гарантия HAVAL 5 лет поддержки
+						</h2>
+						<div class="content-box s-guarantee__head-content">
+							<p>
+								Полная уверенность в наших автомобилях, а также высокое качество
+								производства и компонентов позволяет нам гарантировать 5 лет
+								поддержки для вашего автомобиля HAVAL:  3 года гарантии и 2 года
+								дополнительной сервисной поддержки
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="s-guarantee__wrapper">
+					<div class="s-guarantee__info tabs">
+						<div class="tabs-nav s-guarantee__nav">
+							<div data-tab-btn="tab-guarantee-1" class="btn-s _outline-gray _active">
+								Гарантия на новый автомобиль
+							</div>
+							<div data-tab-btn="tab-guarantee-2" class="btn-s _outline-gray">
+								Программа постгарантийного обслуживания
+							</div>
+						</div>
+						<div class="tabs-content">
+							<div data-tab="tab-guarantee-1" class="_active _show">
+								<div data-spollers class="s-guarantee__spollers">
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Гарантия на новый автомобиль 3 года или 150 000 км пробега
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Гарантия от сквозной коррозии 6 лет независимо от пробега
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Гарантия на запасные части
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Шины
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-tab="tab-guarantee-2">
+								<div data-spollers class="s-guarantee__spollers">
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Гарантия на новый автомобиль 3 года или 150 000 км пробега 2
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Гарантия от сквозной коррозии 6 лет независимо от пробега
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Гарантия на запасные части
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="s-guarantee__spoller">
+										<div data-spoller class="s-guarantee__spoller-btn">
+											<span>
+												Шины
+											</span>
+											<div class="rect"></div>
+										</div>
+										<div>
+											<div class="s-guarantee__spoller-body">
+												<div class="content-box">
+													<p>
+														Гарантия распространяется на части и компоненты каждого
+														автомобиля, приобретенного у официального Дилера, если
+														обнаруженная неисправность была вызвана заводским
+														дефектом (использование некачественных материалов при
+														производстве автомобиля или нарушением технологии
+														производства). Гарантийный период составляет 3 года или
+														150 000 км пробега в зависимости от того, что наступит
+														ранее (кроме гарантии на быстроизнашиваемые детали). Все
+														обнаруженные или возникшие в результате эксплуатации
+														автомобиля неисправности, подпадающие под гарантию,
+														будут устранены официальным Дилером Компании Грейт Волл
+														Мотор Рус.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-guarantee__gallery">
+						<div class="inside">
+							<img src="img/guarantee.jpg" alt="image" class="s-guarantee__img" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-credit sect-m" id="s-credit">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Как получить кредит на автомобиль HAVAL?</h2>
+				</div>
+				<div class="s-credit__grid">
+					<article class="s-credit__item">
+						<img src="img/credit.jpg" alt="image" class="img" />
+						<h3 class="title">Заявка</h3>
+						<div class="content-box">
+							<p>Отправьте заявку на персональное предложение онлайн</p>
+						</div>
+					</article>
+					<article class="s-credit__item">
+						<img src="img/credit.jpg" alt="image" class="img" />
+						<h3 class="title">Одобрение</h3>
+						<div class="content-box">
+							<p>Получите одобрение по кредиту в дилерском центре</p>
+						</div>
+					</article>
+					<article class="s-credit__item">
+						<img src="img/credit.jpg" alt="image" class="img" />
+						<h3 class="title">Договор</h3>
+						<div class="content-box">
+							<p>Подпишите кредитный договор и заберите ваш новый автомобиль HAVAL</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-calc sect-m" id="s-calc">
+			<div class="container">
+				<div class="s-calc__wrapper">
+					<div class="s-calc__info">
+						<h2 class="s-title s-calc__title">Рассчитать HAVAL в кредит</h2>
+						<div class="content-box s-calc__content">
+							<p>
+								Полная стоимость кредита (займа) в % годовых от 0,01% ДО 15,808%
+								оценивайте свои финансовые возможности и риски кредит от 0,01%
+							</p>
+						</div>
+						<div data-model-options="H3,H5,H7,H9,H3,H5,H7,H9,">
+							<form action="#" class="s-calc__form">
+								<div class="wrap">
+									<div class="input-control">
+										<div class="select" data-target-options="model">
+											<div class="select-btn">
+												<input type="text" placeholder="Модель" readonly class="input select-input" />
+												<svg class="arrow">
+													<use xlink:href="img/icons/icons.svg#icon-down"></use>
+												</svg>
+											</div>
+											<div class="select-body"></div>
+										</div>
+									</div>
+									<div class="input-control">
+										<input type="text" placeholder="Фамилия" class="input" />
+									</div>
+									<div class="input-control">
+										<input type="text" placeholder="Имя" class="input" />
+									</div>
+									<div class="input-control">
+										<input type="text" placeholder="Первоначальный взнос" class="input" />
+									</div>
+									<div class="input-control">
+										<div class="select">
+											<div class="select-btn">
+												<input type="text" placeholder="Срок кредита" readonly class="input select-input" />
+												<svg class="arrow">
+													<use xlink:href="img/icons/icons.svg#icon-down"></use>
+												</svg>
+											</div>
+											<div class="select-body">
+												<div class="select-item">6 мес.</div>
+												<div class="select-item">6 мес.</div>
+												<div class="select-item">6 мес.</div>
+												<div class="select-item">6 мес.</div>
+												<div class="select-item">6 мес.</div>
+												<div class="select-item">6 мес.</div>
+												<div class="select-item">6 мес.</div>
+											</div>
+										</div>
+									</div>
+									<div class="input-control">
+										<input type="tel" placeholder="Телефон" class="input" />
+									</div>
+									<button type="submit" class="btn-s _primary">
+										Оставить заявку
+									</button>
+									<div class="check-wrapper">
+										<span class="wpcf7-form-control-wrap">
+											<span class="wpcf7-form-control wpcf7-acceptance">
+												<span class="wpcf7-list-item">
+													<label>
+														<input type="checkbox" name="acceptance-469" />
+														<span class="wpcf7-list-item-label">
+															<span>
+																Я даю согласие на
+																<a href="/privacy-policy" target="_blank">
+																	Обработку персональных данных
+																</a>
+															</span>
+														</span>
+													</label>
+												</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="s-calc__gallery">
+						<img src="img/calc.jpg" alt="image" class="s-calc__img" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-about sect-p bg-ghost" id="s-about">
+			<div class="container">
+				<div class="s-about__wrapper">
+					<div class="s-about__info">
+						<div class="sect-head">
+							<h2 class="s-title">
+								ДЦ Апельсин - купите новый HAVAL в Альметьевске
+							</h2>
+						</div>
+						<div class="content-box s-about__content">
+							<p>
+								Мы, компания Апельсин занимаемся продажей новых автомобилей
+								предоставляем услуги сервиса в России.
+							</p>
+							<p>
+								Нашими клиентами являются физические и юридические лица – покупатели
+								и продавцы автомобилей; производители и дистрибьюторы автомобильных
+								брендов.
+							</p>
+						</div>
+						<div class="s-about__adv-block">
+							<h3 class="f-title s-about__adv-title">Преимущества «Апельсин»</h3>
+							<ul class="list s-about__adv-list">
+								<li>Широкий выбор моделей автомобилей</li>
+								<li>Более 20 лет успешных продаж</li>
+								<li>Юридическая чистота всех машин.</li>
+								<li>Одна из лидирующих компаний рынка</li>
+								<li>Выгодные автокредиты без переплат</li>
+								<li>Надёжность, опыт и высокая ответственность</li>
+								<li>Надежные страховые предложения</li>
+							</ul>
+						</div>
+					</div>
+					<div class="s-about__gallery">
+						<div class="swiper s-about__slider">
+							<div class="slider-arrow _prev _white">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-prev'></use>
+								</svg>
+							</div>
+							<div class="slider-arrow _next _white">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-next'></use>
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+							</div>
+						</div>
+						<div class="swiper s-about__thumb-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-offer sect-p" id="s-offer" style="background: url(&quot;img/offer.jpg&quot;) center / cover no-repeat">
+			<div class="container">
+				<div class="s-offer__info">
+					<div class="sect-head">
+						<h2 class="s-title">
+							Понравилась модель? Запишитесь на тест-драйв прямо сейчас
+						</h2>
+						<div class="content-box s-offer__content">
+							<p>
+								Получите индивидуальное предложение на новый HAVAL и консультацию
+								<br />
+								от официального дилера!
+							</p>
+						</div>
+					</div>
+					<div data-model-options="H3,H5,H7,H9,H3,H5,H7,H9,">
+						<form action="#" class="s-offer__form">
+							<div class="wrap">
+								<div class="input-control">
+									<div class="select" data-target-options="model">
+										<div class="select-btn">
+											<input type="text" placeholder="Модель" readonly class="input select-input" />
+											<svg class="arrow">
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body"></div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Имя" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="Телефон" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Желаемая дата" class="input" />
+								</div>
+								<button type="submit" class="btn-s _primary">
+									Оставить заявку
+								</button>
+								<div class="check-wrapper _white">
+									<span class="wpcf7-form-control-wrap">
+										<span class="wpcf7-form-control wpcf7-acceptance">
+											<span class="wpcf7-list-item">
+												<label>
+													<input type="checkbox" name="acceptance-469" />
+													<span class="wpcf7-list-item-label">
+														<span>
+															Я даю согласие на
+															<a href="/privacy-policy" target="_blank">
+																Обработку персональных данных
+															</a>
+														</span>
+													</span>
+												</label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-contacts sect-m" id="s-contacts">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">
+						Контактная информация
+						<br />
+						дилера HAVAL
+					</h2>
+				</div>
+			</div>
+			<div class="s-contacts__main">
+				<div class="container">
+					<div class="s-contacts__info">
+						<img src="img/logo.svg" alt="logo" class="s-contacts__logo" />
+						<a href="tel:+78553420697" class="s-contacts__tel">
+							+7 (8553) 42-06-97
+						</a>
+						<a href="mailto:infoZakamie@cartat.ru" class="s-contacts__mail">
+							infoZakamie@cartat.ru
+						</a>
+						<ul class="list s-contacts__list">
+							<li>пн-вс: 08:00-20:00</li>
+							<li>г. Альметьевск, ул. Герцена, д. 1Б</li>
+						</ul>
+						<a href="#modal-callback" data-fancybox class="btn-s s-contacts__btn">
+							Оставить заявку
+						</a>
+					</div>
+				</div>
+				<div data-zoom="16" data-center="[54.9033345697812,52.324305]" data-icon="img/location-icon.svg" class="map s-contacts__map"></div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main">
+					<a href="/" class="footer__logo">
+						<img src="img/logo-white.svg" alt="logo" />
+					</a>
+					<p class="footer__policy-content">
+						Все права защищены. Копирование материалов строго по согласию
+						администрации сайта.
+					</p>
+				</div>
+				<ul class="list footer__list">
+					<li><a href="#">Модельный ряд</a></li>
+					<li><a href="#">Программы кредитования</a></li>
+					<li><a href="#">Тест-драйв</a></li>
+				</ul>
+				<ul class="list footer__list">
+					<li><a href="#">Специальные предложения</a></li>
+					<li><a href="#">Оформить кредит</a></li>
+					<li><a href="#">Как нас найти</a></li>
+				</ul>
+				<div class="footer__contacts">
+					<div class="footer__location">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Альметьевск, ул. Герцена, д. 1Б</span>
+					</div>
+					<a href="tel:+78553420697" class="footer__tel">+7 (8553) 42-06-97</a>
+					<a href="mailto:infoZakamie@cartat.ru" class="footer__mail">
+						infoZakamie@cartat.ru
+					</a>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__copyright">© 2026 ООО «Апельсин-Авто»</div>
+				<ul class="list footer__bottom-list">
+					<li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+					<li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/swiper/swiper.min.js?_v=20260602141654"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20260602141654"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20260602141654"></script>
+
+	<script src="js/app.min.js?_v=20260602141654"></script>
+</body>
+
+</html>

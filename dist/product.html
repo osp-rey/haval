@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HAVAL</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20260602141654">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20260602141654">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260602141654">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<div class="header__end">
+					<div class="header__address">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Альметьевск, ул. Герцена, д. 1Б</span>
+					</div>
+					<a href="tel:+78553420697" class="header__tel">+7 (8553) 42-06-97</a>
+					<a href="+78553420697" class="header__mob-tel">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#icon-tel'></use>
+						</svg>
+					</a>
+					<div class="header__burger" id="burger-open">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="header-nav">
+		<div class="container">
+			<div class="swiper header-nav__slider">
+				<div class="swiper-wrapper">
+					<a href="/#s-catalog" class="swiper-slide">Модельный ряд</a>
+					<a href="/#s-credit" class="swiper-slide">Программы кредитования</a>
+					<a href="/#s-promo" class="swiper-slide">Специальные предложения</a>
+					<a href="/#s-calc" class="swiper-slide">Оформить кредит</a>
+					<a href="/#s-contacts" class="swiper-slide">Как нас найти</a>
+					<a href="/#s-offer" class="swiper-slide">Тест-драйв</a>
+				</div>
+			</div>
+			<ul class="list header-nav__list">
+			</ul>
+		</div>
+	</nav>
+	<aside class="burger-overlay" id="burger-overlay"></aside>
+	<aside class="burger" id="burger">
+		<div class="burger__header">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<a href="/#s-catalog">Модельный ряд</a>
+			<a href="/#s-credit">Программы кредитования</a>
+			<a href="/#s-promo">Специальные предложения</a>
+			<a href="/#s-calc">Оформить кредит</a>
+			<a href="/#s-contacts">Как нас найти</a>
+			<a href="/#s-offer">Тест-драйв</a>
+		</ul>
+		<div class="burger__bottom">
+			<div class="burger__address">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<span>Альметьевск, ул. Герцена, д. 1Б</span>
+			</div>
+			<a href="tel:+78553420697" class="burger__tel">+7 (8553) 42-06-97</a>
+		</div>
+	</aside>
+
+	<aside>
+		<div class="modal" id="modal-callback">
+			<div data-fancybox-close class="modal__close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+			<div class="modal__body">
+				<div class="t-title modal__title" data-text="Связаться с нами">
+					Связаться с нами
+				</div>
+				<div class="modal__form">
+					<div style="display: none">
+						<input type="text" class="input-note" />
+					</div>
+					<div class="input-control">
+						<input type="text" placeholder="Ваше имя" class="input" />
+					</div>
+					<div class="input-control">
+						<input type="tel" placeholder="Телефон" class="input" />
+					</div>
+					<button type="submit" class="btn-s">Оставить заявку</button>
+					<div class="check-wrapper">
+						<span class="wpcf7-form-control-wrap">
+							<span class="wpcf7-form-control wpcf7-acceptance">
+								<span class="wpcf7-list-item">
+									<label>
+										<input type="checkbox" name="acceptance-469" />
+										<span class="wpcf7-list-item-label">
+											<span>
+												Я даю согласие на
+												<a href="/privacy-policy" target="_blank">
+													Обработку персональных данных
+												</a>
+											</span>
+										</span>
+									</label>
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-b" id="modal-credit" style="
+      background: url(&quot;img//modal-b.jpg&quot;) center / cover no-repeat;
+    ">
+			<div data-fancybox-close class="modal-b__close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+			<div class="modal-b__body">
+				<div class="modal-b__info">
+					<div class="s-title modal-b__title">Рассчитать HAVAL в кредит</div>
+					<p class="modal-b__content">
+						Полная стоимость кредита (займа) в % годовых от 0,01% ДО 15,808%
+						оценивайте свои финансовые возможности и риски кредит от 0,01%
+					</p>
+					<div data-model-options="H3,H5,H7,H9,H3,H5,H7,H9,">
+						<form action="#" class="modal-b__form">
+							<div class="wrap">
+								<div class="input-control">
+									<div class="select" data-target-options="model">
+										<div class="select-btn">
+											<input type="text" placeholder="Модель" readonly class="input select-input" />
+											<svg class="arrow">
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body"></div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Фамилия" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Имя" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Первоначальный взнос" class="input" />
+								</div>
+								<div class="input-control">
+									<div class="select">
+										<div class="select-btn">
+											<input type="text" placeholder="Срок кредита" readonly class="input select-input" />
+											<svg class="arrow">
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body">
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+											<div class="select-item">6 мес.</div>
+										</div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="Телефон" class="input" />
+								</div>
+								<button type="submit" class="btn-s _primary">
+									Оставить заявку
+								</button>
+								<div class="check-wrapper _white">
+									<span class="wpcf7-form-control-wrap">
+										<span class="wpcf7-form-control wpcf7-acceptance">
+											<span class="wpcf7-list-item">
+												<label>
+													<input type="checkbox" name="acceptance-469" />
+													<span class="wpcf7-list-item-label">
+														<span>
+															Я даю согласие на
+															<a href="/privacy-policy" target="_blank">
+																Обработку персональных данных
+															</a>
+														</span>
+													</span>
+												</label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main>
+
+		<section class="sect-m s-product">
+			<div class="container">
+				<div class="s-product__wrapper">
+					<div class="s-product__info">
+						<div data-product-tab="product-tab-1" class="s-product__tab _active _show">
+							<div class="s-product__gallery _active _show">
+								<div class="swiper s-product__slider">
+									<div class="swiper-wrapper">
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+									</div>
+								</div>
+								<div class="slider-pagination"></div>
+								<div class="slider-arrows">
+									<div class="slider-arrow _prev _white">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-arrow _next _white">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="s-product__spollers" data-da=".s-product__tab-main-1, 991">
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Характеристики выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<ul class="list s-product__spoller-list">
+												<li>
+													<span class="name">Двигатель</span>
+													<span class="val">1.5 л (177 л.с.)</span>
+												</li>
+												<li>
+													<span class="name">Трансмиссия</span>
+													<span class="val">
+														7-ступенчатая, роботизированная, с двойным сцеплением
+														мокрого типа
+													</span>
+												</li>
+												<li>
+													<span class="name">Привод</span>
+													<span class="val">Полный</span>
+												</li>
+												<li>
+													<span class="name">Комплектация</span>
+													<span class="val">
+														Оптимум 1.5 AT 4WD, 2026 модельный год
+													</span>
+												</li>
+												<li>
+													<span class="name">Цвет</span>
+													<span class="val">Пепельный антрацит</span>
+												</li>
+												<li>
+													<span class="name">VIN</span>
+													<span class="val">XZGFF05A*TA****40</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Особенности выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<div class="content-box">
+												<p>Экстерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+												<p>Интерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла 
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Особенности выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<ul class="list s-product__spoller-list">
+												<li>
+													<span class="name">Двигатель</span>
+													<span class="val">1.5 л (177 л.с.)</span>
+												</li>
+												<li>
+													<span class="name">Трансмиссия</span>
+													<span class="val">
+														7-ступенчатая, роботизированная, с двойным сцеплением
+														мокрого типа
+													</span>
+												</li>
+												<li>
+													<span class="name">Привод</span>
+													<span class="val">Полный</span>
+												</li>
+												<li>
+													<span class="name">Комплектация</span>
+													<span class="val">
+														Оптимум 1.5 AT 4WD, 2026 модельный год
+													</span>
+												</li>
+												<li>
+													<span class="name">Цвет</span>
+													<span class="val">Пепельный антрацит</span>
+												</li>
+												<li>
+													<span class="name">VIN</span>
+													<span class="val">XZGFF05A*TA****40</span>
+												</li>
+											</ul>
+											<div class="content-box">
+												<p>Экстерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+												<p>Интерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла 
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Характеристики выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<ul class="list s-product__spoller-list">
+												<li>
+													<span class="name">Двигатель</span>
+													<span class="val">1.5 л (177 л.с.)</span>
+												</li>
+												<li>
+													<span class="name">Трансмиссия</span>
+													<span class="val">
+														7-ступенчатая, роботизированная, с двойным сцеплением
+														мокрого типа
+													</span>
+												</li>
+												<li>
+													<span class="name">Привод</span>
+													<span class="val">Полный</span>
+												</li>
+												<li>
+													<span class="name">Комплектация</span>
+													<span class="val">
+														Оптимум 1.5 AT 4WD, 2026 модельный год
+													</span>
+												</li>
+												<li>
+													<span class="name">Цвет</span>
+													<span class="val">Пепельный антрацит</span>
+												</li>
+												<li>
+													<span class="name">VIN</span>
+													<span class="val">XZGFF05A*TA****40</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-product-tab="product-tab-2" class="s-product__tab">
+							<div class="s-product__gallery _active _show">
+								<div class="swiper s-product__slider">
+									<div class="swiper-wrapper">
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+										<a href="img/product-main.jpg" data-fancybox="product-main" class="swiper-slide">
+											<img src="img/product-main.jpg" alt="image " />
+										</a>
+									</div>
+								</div>
+								<div class="slider-pagination"></div>
+								<div class="slider-arrows">
+									<div class="slider-arrow _prev _white">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-arrow _next _white">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="s-product__spollers" data-da=".s-product__tab-main-2, 991">
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Характеристики выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<ul class="list s-product__spoller-list">
+												<li>
+													<span class="name">Двигатель</span>
+													<span class="val">1.5 л (177 л.с.)</span>
+												</li>
+												<li>
+													<span class="name">Трансмиссия</span>
+													<span class="val">
+														7-ступенчатая, роботизированная, с двойным сцеплением
+														мокрого типа
+													</span>
+												</li>
+												<li>
+													<span class="name">Привод</span>
+													<span class="val">Полный</span>
+												</li>
+												<li>
+													<span class="name">Комплектация</span>
+													<span class="val">
+														Оптимум 1.5 AT 4WD, 2026 модельный год
+													</span>
+												</li>
+												<li>
+													<span class="name">Цвет</span>
+													<span class="val">Пепельный антрацит</span>
+												</li>
+												<li>
+													<span class="name">VIN</span>
+													<span class="val">XZGFF05A*TA****40</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Особенности выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<div class="content-box">
+												<p>Экстерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+												<p>Интерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла 
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Особенности выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<ul class="list s-product__spoller-list">
+												<li>
+													<span class="name">Двигатель</span>
+													<span class="val">1.5 л (177 л.с.)</span>
+												</li>
+												<li>
+													<span class="name">Трансмиссия</span>
+													<span class="val">
+														7-ступенчатая, роботизированная, с двойным сцеплением
+														мокрого типа
+													</span>
+												</li>
+												<li>
+													<span class="name">Привод</span>
+													<span class="val">Полный</span>
+												</li>
+												<li>
+													<span class="name">Комплектация</span>
+													<span class="val">
+														Оптимум 1.5 AT 4WD, 2026 модельный год
+													</span>
+												</li>
+												<li>
+													<span class="name">Цвет</span>
+													<span class="val">Пепельный антрацит</span>
+												</li>
+												<li>
+													<span class="name">VIN</span>
+													<span class="val">XZGFF05A*TA****40</span>
+												</li>
+											</ul>
+											<div class="content-box">
+												<p>Экстерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+												<p>Интерьер</p>
+												<ul>
+													<li>
+														Окраска кузова металлик (черный, белый, оранжевый) /
+														неметаллик (серый) (опционально)
+													</li>
+													<li>
+														Внедорожный пакет: пластиковые накладки бампера и
+														дверей, расширители колесных арок, юбка  Двухуровневая
+														решетка радиатора с хромированными элементами 
+													</li>
+													<li>Светодиодные фары с электрорегулировкой высоты </li>
+													<li>Светодиодные дневные ходовые огни </li>
+													<li>Светодиодные задние фонари </li>
+													<li>Светодиодные задние противотуманные фонари </li>
+													<li>
+														18" легкосплавные колесные диски с шинами размерностью
+														225 / 60 
+													</li>
+													<li>Окрашенные в цвет кузова ручки дверей </li>
+													<li>
+														Антенна «Акулий плавник»  Очиститель заднего стекла 
+													</li>
+													<li>Рейлинги на крыше</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-product__spoller">
+									<div data-spoller class="s-product__spoller-btn">
+										<span>Характеристики выбранной комплектации</span>
+										<div class="rect"></div>
+									</div>
+									<div>
+										<div class="s-product__spoller-body">
+											<ul class="list s-product__spoller-list">
+												<li>
+													<span class="name">Двигатель</span>
+													<span class="val">1.5 л (177 л.с.)</span>
+												</li>
+												<li>
+													<span class="name">Трансмиссия</span>
+													<span class="val">
+														7-ступенчатая, роботизированная, с двойным сцеплением
+														мокрого типа
+													</span>
+												</li>
+												<li>
+													<span class="name">Привод</span>
+													<span class="val">Полный</span>
+												</li>
+												<li>
+													<span class="name">Комплектация</span>
+													<span class="val">
+														Оптимум 1.5 AT 4WD, 2026 модельный год
+													</span>
+												</li>
+												<li>
+													<span class="name">Цвет</span>
+													<span class="val">Пепельный антрацит</span>
+												</li>
+												<li>
+													<span class="name">VIN</span>
+													<span class="val">XZGFF05A*TA****40</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-product__main">
+						<div data-product-tab="product-tab-1" class="s-product__tab s-product__tab-main-1 _active _show">
+							<h1 class="t-title">HAVAL H3</h1>
+							<div class="content-box s-product__content-box">
+								<p>
+									Обновленный HAVAL H3 стал еще выразительнее и продуманнее. Новые
+									линии, улучшенные формы и интеллектуальные изменения делают
+									автомобиль более комфортным и практичным. Благодаря обновлению
+									двигателя до экологического стандарта Евро-6* автомобиль стал
+									экономичнее, сохранив свой уверенный и брутальный характер.
+								</p>
+							</div>
+							<div class="s-product__main-row">
+								<div class="block _price">
+									<div class="item">
+										<div class="name">Цена от</div>
+										<div class="val">2 499 000 ₽</div>
+									</div>
+									<div class="item">
+										<div class="name">В кредит от</div>
+										<div class="val">0,01%</div>
+									</div>
+								</div>
+								<a href="img/about.jpg" download class="block _">
+									<div class="item">
+										<div class="name">
+											<span>Прайс-лист</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-download"></use>
+											</svg>
+										</div>
+										<div class="descr">Модельный год: 2026 Год выпуска: 2026</div>
+									</div>
+								</a>
+							</div>
+							<div class="s-product__colors">
+								<div class="s-product__colors-title">
+									Выбранный цвет:
+									<span id="product-current-color">
+										Терракотовый сапфир / металлик
+									</span>
+								</div>
+								<div class="s-product__colors-slider swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide s-product__color _active" style="
+                    background: url(&quot;img/product-main.jpg&quot;) center /
+                      cover no-repeat;
+                  " data-gallery-images="img/product-main.jpg,img/product-main.jpg,img/product-main.jpg,img/product-main.jpg" data-name-color="Терракотовый сапфир / металлик"></div>
+										<div class="swiper-slide s-product__color" style="
+                    background: url(&quot;img/product-main-2.jpg&quot;)
+                      center / cover no-repeat;
+                  " data-gallery-images="img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg" data-name-color="Белый"></div>
+										<div class="swiper-slide s-product__color" style="
+                    background: url(&quot;img/product-main.jpg&quot;) center /
+                      cover no-repeat;
+                  " data-gallery-images="img/product-main.jpg,img/product-main.jpg,img/product-main.jpg,img/product-main.jpg" data-name-color="Терракотовый сапфир / металлик"></div>
+										<div class="swiper-slide s-product__color" style="
+                    background: url(&quot;img/product-main-2.jpg&quot;)
+                      center / cover no-repeat;
+                  " data-gallery-images="img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg" data-name-color="Белый"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-product-tab="product-tab-2" class="s-product__tab s-product__tab-main-2">
+							<h1 class="t-title">HAVAL H3 Премиум</h1>
+							<div class="content-box s-product__content-box">
+								<p>
+									Обновленный HAVAL H3 стал еще выразительнее и продуманнее. Новые
+									линии, улучшенные формы и интеллектуальные изменения делают
+									автомобиль более комфортным и практичным. Благодаря обновлению
+									двигателя до экологического стандарта Евро-6* автомобиль стал
+									экономичнее, сохранив свой уверенный и брутальный характер.
+								</p>
+								<p>
+									Обновленный HAVAL H3 стал еще выразительнее и продуманнее. Новые
+									линии, улучшенные формы и интеллектуальные изменения делают
+									автомобиль более комфортным и практичным. Благодаря обновлению
+									двигателя до экологического стандарта Евро-6* автомобиль стал
+									экономичнее, сохранив свой уверенный и брутальный характер.
+								</p>
+							</div>
+							<div class="s-product__main-row">
+								<div class="block _price">
+									<div class="item">
+										<div class="name">Цена от</div>
+										<div class="val">2 499 000 ₽</div>
+									</div>
+									<div class="item">
+										<div class="name">В кредит от</div>
+										<div class="val">0,01%</div>
+									</div>
+								</div>
+								<a href="img/about.jpg" download class="block">
+									<div class="item">
+										<div class="name">
+											<span>Прайс-лист</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-download"></use>
+											</svg>
+										</div>
+										<div class="descr">Модельный год: 2026 Год выпуска: 2026</div>
+									</div>
+								</a>
+							</div>
+							<div class="s-product__colors">
+								<div class="s-product__colors-title">
+									Выбранный цвет:
+									<span id="product-current-color">
+										Терракотовый сапфир / металлик
+									</span>
+								</div>
+								<div class="s-product__colors-slider swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide s-product__color _active" style="
+                    background: url(&quot;img/product-main.jpg&quot;) center /
+                      cover no-repeat;
+                  " data-gallery-images="img/product-main.jpg,img/product-main.jpg,img/product-main.jpg,img/product-main.jpg" data-name-color="Терракотовый сапфир / металлик"></div>
+										<div class="swiper-slide s-product__color" style="
+                    background: url(&quot;img/product-main-2.jpg&quot;)
+                      center / cover no-repeat;
+                  " data-gallery-images="img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg" data-name-color="Белый"></div>
+										<div class="swiper-slide s-product__color" style="
+                    background: url(&quot;img/product-main.jpg&quot;) center /
+                      cover no-repeat;
+                  " data-gallery-images="img/product-main.jpg,img/product-main.jpg,img/product-main.jpg,img/product-main.jpg" data-name-color="Терракотовый сапфир / металлик"></div>
+										<div class="swiper-slide s-product__color" style="
+                    background: url(&quot;img/product-main-2.jpg&quot;)
+                      center / cover no-repeat;
+                  " data-gallery-images="img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg,img/product-main-2.jpg" data-name-color="Белый"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-product__complectation">
+							<div class="s-product__complectation-title">
+								Доступные комплектации
+							</div>
+							<div class="swiper s-product__complectation-slider">
+								<div class="swiper-wrapper">
+									<div data-product-tab-btn="product-tab-1" class="swiper-slide s-product__complectation-btn _active">
+										Оптимум, 2WD
+									</div>
+									<div data-product-tab-btn="product-tab-2" class="swiper-slide s-product__complectation-btn">
+										Премиум, 2WD
+									</div>
+									<div data-product-tab-btn="product-tab-1" class="swiper-slide s-product__complectation-btn">
+										Оптимум, 2WD
+									</div>
+									<div data-product-tab-btn="product-tab-2" class="swiper-slide s-product__complectation-btn">
+										Премиум, 2WD
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-product__buttons">
+							<a href="#modal-callback" data-fancybox data-modal-title="Задать вопрос" class="btn-s">
+								задать вопрос
+							</a>
+							<a href="#modal-callback" data-fancybox data-modal-title="записаться на тест-драйв" data-btn-note="записаться на тест-драйв" data-target-note="#modal-callback .input-note" class="btn-s">
+								записаться на тест-драйв
+							</a>
+							<a href="#modal-credit" data-fancybox data-modal-title="рассчитать кредит" data-btn-note="рассчитать кредит" data-target-note="#modal-callback .input-note" class="btn-s">
+								рассчитать кредит
+							</a>
+						</div>
+						<div class="s-product__tel">
+							<span>Позвонить:</span>
+							<a href="tel:+78553420697">+7 (8553) 42-06-97</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-about sect-p bg-ghost" id="s-about">
+			<div class="container">
+				<div class="s-about__wrapper">
+					<div class="s-about__info">
+						<div class="sect-head">
+							<h2 class="s-title">
+								Купить новый HAVAL H3 в Альметьевске
+							</h2>
+						</div>
+						<div class="content-box s-about__content">
+							<p>
+								Мы, компания Апельсин занимаемся продажей новых автомобилей
+								предоставляем услуги сервиса в России.
+							</p>
+							<p>
+								Нашими клиентами являются физические и юридические лица – покупатели
+								и продавцы автомобилей; производители и дистрибьюторы автомобильных
+								брендов.
+							</p>
+						</div>
+						<div class="s-about__adv-block">
+							<h3 class="f-title s-about__adv-title">Преимущества «Апельсин»</h3>
+							<ul class="list s-about__adv-list">
+								<li>Широкий выбор моделей автомобилей</li>
+								<li>Более 20 лет успешных продаж</li>
+								<li>Юридическая чистота всех машин.</li>
+								<li>Одна из лидирующих компаний рынка</li>
+								<li>Выгодные автокредиты без переплат</li>
+								<li>Надёжность, опыт и высокая ответственность</li>
+								<li>Надежные страховые предложения</li>
+							</ul>
+						</div>
+					</div>
+					<div class="s-about__gallery">
+						<div class="swiper s-about__slider">
+							<div class="slider-arrow _prev _white">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-prev'></use>
+								</svg>
+							</div>
+							<div class="slider-arrow _next _white">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-next'></use>
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+								<a href="img/about.jpg" data-fancybox="gallery-about" class="swiper-slide">
+									<img src="img/about.jpg" alt="image" />
+								</a>
+							</div>
+						</div>
+						<div class="swiper s-about__thumb-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+								<div class="swiper-slide" style="
+                background: url(&quot;img/about.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+							</div>
+						</div>
+						<div class="slider-scrollbar"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-offer sect-p" id="s-offer" style="background: url(&quot;img/offer.jpg&quot;) center / cover no-repeat">
+			<div class="container">
+				<div class="s-offer__info">
+					<div class="sect-head">
+						<h2 class="s-title">
+							Понравилась модель? Запишитесь на тест-драйв прямо сейчас
+						</h2>
+						<div class="content-box s-offer__content">
+							<p>
+								Получите индивидуальное предложение на новый HAVAL и консультацию
+								<br />
+								от официального дилера!
+							</p>
+						</div>
+					</div>
+					<div data-model-options="H3,H5,H7,H9,H3,H5,H7,H9,">
+						<form action="#" class="s-offer__form">
+							<div class="wrap">
+								<div class="input-control">
+									<div class="select" data-target-options="model">
+										<div class="select-btn">
+											<input type="text" placeholder="Модель" readonly class="input select-input" />
+											<svg class="arrow">
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body"></div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Имя" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="Телефон" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Желаемая дата" class="input" />
+								</div>
+								<button type="submit" class="btn-s _primary">
+									Оставить заявку
+								</button>
+								<div class="check-wrapper _white">
+									<span class="wpcf7-form-control-wrap">
+										<span class="wpcf7-form-control wpcf7-acceptance">
+											<span class="wpcf7-list-item">
+												<label>
+													<input type="checkbox" name="acceptance-469" />
+													<span class="wpcf7-list-item-label">
+														<span>
+															Я даю согласие на
+															<a href="/privacy-policy" target="_blank">
+																Обработку персональных данных
+															</a>
+														</span>
+													</span>
+												</label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-contacts sect-m" id="s-contacts">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">
+						Контактная информация
+						<br />
+						дилера HAVAL
+					</h2>
+				</div>
+			</div>
+			<div class="s-contacts__main">
+				<div class="container">
+					<div class="s-contacts__info">
+						<img src="img/logo.svg" alt="logo" class="s-contacts__logo" />
+						<a href="tel:+78553420697" class="s-contacts__tel">
+							+7 (8553) 42-06-97
+						</a>
+						<a href="mailto:infoZakamie@cartat.ru" class="s-contacts__mail">
+							infoZakamie@cartat.ru
+						</a>
+						<ul class="list s-contacts__list">
+							<li>пн-вс: 08:00-20:00</li>
+							<li>г. Альметьевск, ул. Герцена, д. 1Б</li>
+						</ul>
+						<a href="#modal-callback" data-fancybox class="btn-s s-contacts__btn">
+							Оставить заявку
+						</a>
+					</div>
+				</div>
+				<div data-zoom="16" data-center="[54.9033345697812,52.324305]" data-icon="img/location-icon.svg" class="map s-contacts__map"></div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main">
+					<a href="/" class="footer__logo">
+						<img src="img/logo-white.svg" alt="logo" />
+					</a>
+					<p class="footer__policy-content">
+						Все права защищены. Копирование материалов строго по согласию
+						администрации сайта.
+					</p>
+				</div>
+				<ul class="list footer__list">
+					<li><a href="#">Модельный ряд</a></li>
+					<li><a href="#">Программы кредитования</a></li>
+					<li><a href="#">Тест-драйв</a></li>
+				</ul>
+				<ul class="list footer__list">
+					<li><a href="#">Специальные предложения</a></li>
+					<li><a href="#">Оформить кредит</a></li>
+					<li><a href="#">Как нас найти</a></li>
+				</ul>
+				<div class="footer__contacts">
+					<div class="footer__location">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Альметьевск, ул. Герцена, д. 1Б</span>
+					</div>
+					<a href="tel:+78553420697" class="footer__tel">+7 (8553) 42-06-97</a>
+					<a href="mailto:infoZakamie@cartat.ru" class="footer__mail">
+						infoZakamie@cartat.ru
+					</a>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__copyright">© 2026 ООО «Апельсин-Авто»</div>
+				<ul class="list footer__bottom-list">
+					<li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+					<li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/swiper/swiper.min.js?_v=20260602141654"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20260602141654"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20260602141654"></script>
+
+	<script src="js/app.min.js?_v=20260602141654"></script>
+</body>
+
+</html>

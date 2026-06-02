@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mediaAdaptive();
 
   Fancybox.bind("[data-fancybox]", {
+    closeButton: false,
     on: {
       destroy: (instance) => {
         const id = instance.getSlide().src;
@@ -42,5 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-  // Fancybox.show([{ type: "inline", src: "#modal-callback" }]);
+  // Fancybox.show([{ type: "inline", src: "#modal-credit" }]);
 });

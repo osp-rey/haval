@@ -12,13 +12,15 @@ export default function handlerSelect() {
     selects.forEach((select) => {
       select.addEventListener("click", (e) => e.stopPropagation());
       const targetOptions = select.dataset.targetOptions;
+
       if (targetOptions) {
         const selector = `data-${targetOptions}-options`;
-        const target = document.querySelector(`[${selector}]`);
+        const target = select.closest(`[${selector}]`);
 
         if (target) {
           const selectBody = select.querySelector(".select-body");
           const options = target.getAttribute(selector);
+          console.log(options)
           const arrOptions = options.split(",");
 
           arrOptions.forEach((option) => {

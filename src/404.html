@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body error404">
+    @@include('html/components/header.html')
+    @@include('html/components/burger.html')
+    @@include('html/components/modal.html')
+    <main>
+      
+      <section class="s-notfound sect-m">
+        <div class="container">
+          <div class="s-notfound__num">404</div>
+          <div class="s-notfound__descr content">
+            Страницы по Вашему запросу не существует.
+          </div>
+          <a href="/" class="btn-s s-notfound__btn">На главную</a>
+        </div>
+      </section>
+
+    </main>
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

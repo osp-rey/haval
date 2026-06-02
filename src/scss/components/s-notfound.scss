@@ -1,0 +1,21 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-notfound {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  &__num {
+    font-weight: 600;
+    font-size: 140px;
+  }
+  &__descr {
+    margin: 20px 0;
+  }
+  &__btn {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
